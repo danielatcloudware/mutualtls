@@ -1,5 +1,6 @@
 const tls = require('tls');
 const fs = require('fs');
+const env = require('env-var');
 
 const options = {
     key: fs.readFileSync('server-key.pem'),
@@ -23,6 +24,7 @@ const server = tls.createServer(options, (socket) => {
     socket.pipe(socket);
 });
 
-server.listen(8000, () => {
-    console.log('server bound');
+const port = env.get("SERVER_PORT", "80").asString();
+server.listen(port, () => {
+    console.log(`server bound on port ${port}`);
 });

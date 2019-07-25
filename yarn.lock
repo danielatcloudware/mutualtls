@@ -211,6 +211,13 @@ encodeurl@~1.0.2:
   resolved "https://registry.yarnpkg.com/encodeurl/-/encodeurl-1.0.2.tgz#ad3ff4c86ec2d029322f5a02c3a9a606c95b3f59"
   integrity sha1-rT/0yG7C0CkyL1oCw6mmBslbP1k=
 
+env-var@^3.0.2:
+  version "3.5.0"
+  resolved "https://registry.yarnpkg.com/env-var/-/env-var-3.5.0.tgz#d1514f4e827ee2bec32cfe7e69dbb3385c33489c"
+  integrity sha512-nglil4hN6u7CQnqRjJgvQ04XW34HIMBHKDG/amQrvLgAyvUdEX6SECfmDhBgfRqyZS0MfFpHiqIq5IDlLWdYlw==
+  dependencies:
+    is-url "~1.2.2"
+
 escape-html@~1.0.3:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/escape-html/-/escape-html-1.0.3.tgz#0258eae4d3d0c0974de1c169188ef0051d1d1988"
@@ -326,6 +333,11 @@ is-promise@~1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/is-promise/-/is-promise-1.0.1.tgz#31573761c057e33c2e91aab9e96da08cefbe76e5"
   integrity sha1-MVc3YcBX4zwukaq56W2gjO++duU=
+
+is-url@~1.2.2:
+  version "1.2.4"
+  resolved "https://registry.yarnpkg.com/is-url/-/is-url-1.2.4.tgz#04a4df46d28c4cff3d73d01ff06abeb318a1aa52"
+  integrity sha512-ITvGim8FhRiYe4IQ5uHSkj7pVaPDrCTkNd3yq3cV7iZAcJdHTUMPMEHcqSOy9xZ9qFenQCvi+2wjH9a1nXqHww==
 
 jade@~1.11.0:
   version "1.11.0"

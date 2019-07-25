@@ -1,12 +1,13 @@
 const tls = require('tls');
 const fs = require('fs');
+const env = require('env-var');
 
 const options = {
     ca: fs.readFileSync('ca-crt.pem'),
     key: fs.readFileSync('client1-key.pem'),
     cert: fs.readFileSync('client1-crt.pem'),
     host: 'server.localhost',
-    port: 8000,
+    port: env.get("PORT", "80").asString(),
     rejectUnauthorized:true,
     requestCert:true
 };
